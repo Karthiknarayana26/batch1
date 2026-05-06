@@ -30,6 +30,20 @@
     </dependency>
   </dependencies>
 
+    <!-- ✅ ADD THIS BLOCK HERE -->
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexusRepo</id>
+      <url>http://3.143.245.246:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+
+    <repository>
+      <id>nexusRepo</id>
+      <url>http://3.143.245.246:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
+  
+
   <build>
     <finalName>webappliaction</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
