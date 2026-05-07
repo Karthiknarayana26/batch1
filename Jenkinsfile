@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven '/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3'
-    }
-
-    environment {
-        PATH = "/opt/maven3/bin:${env.PATH}"
+        maven 'maven3'
     }
 
     stages {
