@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.9.15'
+        maven '/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3'
     }
 
     environment {
